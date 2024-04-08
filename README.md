@@ -21,6 +21,8 @@ General
 - [ ] add in Simon acknowledgement statement
 - [ ] add in James acknowledgement statement
 - [ ] create requirements.txt
+- [ ] make code read in from online csv
+- [ ] write use best practices here
 
 CSV data specific
 - [ ] add in column for data webpage
