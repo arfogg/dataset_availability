@@ -16,13 +16,17 @@ Developed using Python 3.8.8.
 
 General
 - [x] create github repo
-- [ ] add in collaborators
+- [x] add in collaborators
 - [ ] add in data
+- [ ] check Caitriona acknowledgement statement
 - [ ] add in Simon acknowledgement statement
 - [ ] add in James acknowledgement statement
 - [ ] create requirements.txt
-- [ ] make code read in from online csv
 - [ ] write use best practices here
+
+Code
+- [x] make code read in from online csv
+- [ ] add in docstrings
 
 CSV data specific
 - [ ] add in column for data webpage

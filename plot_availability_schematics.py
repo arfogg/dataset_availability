@@ -13,18 +13,15 @@ import numpy as np
 
 def read_availability():
     
-    availability_csv=r'Users\admin\Documents\Notes\lit_reviews\mission_start_and_end.csv'
-    availability_csv=os.path.join('C:'+os.sep,availability_csv)
     
-    
-    print('Reading: ', availability_csv)
-    
-    df=pd.read_csv(availability_csv , dtype={'start_month':np.float64, 'start_year':np.float64, 'end_month':np.float64, 'end_year':np.float64})
+    url='https://raw.githubusercontent.com/arfogg/dataset_availability/main/mission_start_and_end.csv'  
+    print('Reading: ', url)
+    df=pd.read_csv(url , dtype={'start_month':np.float64, 'start_year':np.float64, 'end_month':np.float64, 'end_year':np.float64})
 
+    # Converting to Timestamp
     sdtime=[]
     edtime=[]
     for i in range(len(df)):
-        #print(i, df.start_month.iloc[i], df.start_year.iloc[i])
         smo=df.start_month.iloc[i] if ~np.isnan(df.start_month.iloc[i]) else 1
         sdtime.append(pd.Timestamp(year=int(df.start_year.iloc[i]), month=int(smo), day=1))
         
@@ -36,7 +33,6 @@ def read_availability():
 
     df['sdtime']=sdtime
     df['edtime']=edtime
-    
     
     return df
     
