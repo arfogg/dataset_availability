@@ -1,14 +1,15 @@
-﻿name,start_month,start_year,end_month,end_year,space_ground_flag,comment_dates,comment_data
+name,start_month,start_year,end_month,end_year,space_ground_flag,comment_dates,comment_data
 Wind,11,1994,nan,nan,space,ongoing,"AKR observations, IMF, solar wind plasma; at L1 from 2004"
 SuperDARN,10,1983,nan,nan,ground,ongoing,"velocity, backscattered power at various locations; convection maps given global electrostatic potential (can give vectors too)"
 THEMIS,2,2007,nan,nan,space,ongoing,"5 spacecraft THEMIS A-E; magnetic field, plasma"
 SuperMAG indices,nan,1968,nan,2023,ground,ongoing,"SMR, SMR LT, SME, SME MLAT, SME MLT, SMU, SML"
 SuperMAG magnetometers,nan,1970,nan,nan,ground,ongoing,number of magnetometers increases with time
+IMAGE magnetometers,,1982,nan,nan,ground,ongoing,"number of magnetometers increases with time, only Fennscandia, 1 second for some, 10, 20, 30 and 60 second resolution for all. Simon has all 1994- 2019 at 10 second"
 MagIE,nan,1991,nan,nan,ground,ongoing,"stations across Ireland: Valentia and Armagh long running, Dunsink and Birr newer; N/E/Z, B, dBdt, K"
 GOES 1-18,nan,1975,nan,nan,space,ongoing,"Xray flux at different wavelength, protons, magnetometer"
 Auroral Electrojet indices,nan,1957,nan,2018,ground,stopped 2018,"AU, AL, AE, AO; hourly AE since 1957,"
 OMNI hourly / daily,nan,1963,nan,nan,space,ongoing,includes space and ground based stuff
-OMNI minute,nan,1981,nan,nan,space,ongoing,includes space and ground based stuff
+OMNI minute,nan,1981,nan,nan,space,ongoing,"includes space and ground based stuff, tools and download code: https://github.com/08walkersj/Solar_Wind_Tools"
 SYM-H,7,1980,nan,nan,ground,ongoing if accessed from Kyoto directly,ring current index
 Kp,1,1932,nan,nan,ground,"ongoing, accesssed from GFZ potsdam",planetary activity index
 Dst,nan,1957,nan,nan,ground,ongoing,storm index
@@ -16,3 +17,6 @@ IMAGE,nan,2000,nan,2005,space,"ended, access through NASA cdaweb",auroral images
 ACE,nan,1997,nan,nan,space,"at L1 from 1998, ongoing, accessed from CDAWeb","IMF, solar wind plasma"
 Geotail,nan,1992,nan,2022,space,"stopped 2022, some instruments shorter lifetime, access from CDAWeb","IMF, solar wind plasma, AKR observations (hard to get hold of)"
 AMPERE,nan,2010,nan,2023,space,"ongoing, but added slowly I think",maps of field-aligned currents in MLTxcolat grid
+Polar,5,1996,3,2008,space,some periods not so useful due to the changing orbit,"VIS and UVI, auroral imagery"
+SSUSI,1,2005,nan,nan,space,ongoing number of satellites are less at earlier times on a selection of DMSP F satellites,"auroral images, scanning and limited field of view"
+DMSP,,1962,nan,nan,space,"ongoing, number of satellites vary",instruments vary. Most have particle measurements and magnetometers. Older satellite data may be hard to acquire. Auroral imagery from the eary 1970s but again likely hard to find
